@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Information</title>
+</head>
+<body>
+<h1>Login Information</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Account</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% logins.forEach(function(login) { %>
+    <tr>
+        <td><%= login.id %></td>
+        <td><%= login.account %></td>
+        <td><%= login.password %></td>
+    </tr>
+    <% }); %>
+    </tbody>
+</table>
+</body>
+</html>
